@@ -4,7 +4,7 @@ root = Tk()
 root.title("GUI Calculator")
 root.configure(background='#212121')
 
-e = Entry(root, width=26, borderwidth=5, bg="#2b292a", fg="#fff", font = ('courier', 15, 'bold'))
+e = Entry(root, width=26, borderwidth=5, bg="#2b292a", fg="#fff", font = ('courier', 15, 'bold'), justify = RIGHT)
 e.grid(row=0, column=0, columnspan=4, pady=14, padx=4, ipady=10)
 
 button_1 = Button(root, text=1, borderwidth=1, padx=25, pady=10, bg="#343434", fg="#fff", font = ('courier', 15, 'bold'))
@@ -18,10 +18,10 @@ button_8 = Button(root, text=8, borderwidth=1, padx=25, pady=10, bg="#343434", f
 button_9 = Button(root, text=9, borderwidth=1, padx=25, pady=10, bg="#343434", fg="#fff", font = ('courier', 15, 'bold'))
 button_0 = Button(root, text=0, borderwidth=1, padx=25, pady=10, bg="#343434", fg="#fff", font = ('courier', 15, 'bold'))
 
-button_add = Button(root, text= "+", borderwidth=1, padx=25, pady=10, bg="#1a454f", font = ('courier', 15, 'bold'))
-button_subtract = Button(root, text= "-", borderwidth=1, padx=25, pady=10, bg="#1a454f", font = ('courier', 15, 'bold'))
-button_divide = Button(root, text= "/", borderwidth=1, padx=25, pady=10, bg="#1a454f", font = ('courier', 15, 'bold'))
-button_multiply = Button(root, text= "*", borderwidth=1, padx=25, pady=10, bg="#1a454f", font = ('courier', 15, 'bold'))
+button_add = Button(root, text= "+", borderwidth=1, padx=25, pady=10, bg="#1a454f", fg="#fff", font = ('courier', 15, 'bold'))
+button_subtract = Button(root, text= "-", borderwidth=1, padx=25, pady=10, bg="#1a454f", fg="#fff", font = ('courier', 15, 'bold'))
+button_divide = Button(root, text= "/", borderwidth=1, padx=25, pady=10, bg="#1a454f", fg="#fff", font = ('courier', 15, 'bold'))
+button_multiply = Button(root, text= "*", borderwidth=1, padx=25, pady=10, bg="#1a454f", fg="#fff", font = ('courier', 15, 'bold'))
 
 button_equals = Button(root, text= "=", borderwidth=1, padx=25, pady=10, bg="#77dd77", font = ('courier', 15, 'bold'))
 button_clear = Button(root, text= "C", borderwidth=1, padx=25, pady=10, bg="#ff6961", font = ('courier', 15, 'bold'))
